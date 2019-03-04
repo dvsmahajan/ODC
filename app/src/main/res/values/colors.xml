@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F3F1F1</color>
+    <color name="colorPrimaryDark">#251400</color>
+    <color name="colorAccent">#FFC92762</color>
+    <color name="ColorPrimary">#F3F1F1</color>
+    <color name="textBoxBGBorderColor">#FF3D1500</color>
+    <color name="textBoxBGColor">#FFC2BDBD</color>
+    <color name="button_color">#FFD50751</color>
+    <color name="button_border_color">#FFCA2461</color>
+    <color name="black">#110A07</color>
+    <color name="titleText">#EEFC5A09</color>
+    <color name="headText">#EEC74504</color>
+</resources>

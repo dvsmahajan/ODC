@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGroup">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="26dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/group_details"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            />
+        <EditText
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:hint="Enter User Name"
+            android:layout_marginTop="26dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/input_text_box"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"/>
+
+        <EditText
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_email_id"
+            android:hint="Enter User Email id"
+            android:layout_marginTop="26dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/input_text_box"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_layout"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:text="@string/submitGroup"
+            android:textColor="@color/colorPrimary"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+</FrameLayout>

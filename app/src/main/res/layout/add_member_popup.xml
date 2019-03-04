@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="400dp"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/popup_bg"
+
+    >
+
+    <AutoCompleteTextView
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_text_box"
+        android:layout_marginBottom="18dp"
+        android:padding="8dp"
+        android:id="@+id/member_auto_name"
+        android:hint="Enter Name"
+        android:textColorHint="@color/colorPrimary"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        />
+<!--
+    <EditText
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/member_name"
+        android:background="@drawable/input_text_box"
+        android:textColor="@color/colorPrimary"
+        android:hint="@string/memberName"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorPrimary"
+        />-->
+    <EditText
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/member_email"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/input_text_box"
+        android:textColor="@color/colorPrimary"
+        android:hint="@string/memberEmail"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="18dp"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:padding="9dp"
+        android:background="@color/button_color"
+        android:layout_marginTop="25dp"
+        android:text="ADD"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:id="@+id/addMemberToList"/>
+
+</LinearLayout>

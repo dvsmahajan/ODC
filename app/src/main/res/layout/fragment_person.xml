@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/addUsers"
+                android:textAlignment="center"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/headText"
+                />
+            <EditText
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/input_text_box"
+                android:padding="5dp"
+                android:layout_marginTop="18dp"
+                android:hint="@string/enterEmail"
+                android:textColorHint="@color/colorPrimary"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:id="@+id/user_name"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/input_text_box"
+                android:padding="5dp"
+                android:layout_marginTop="18dp"
+                android:hint="@string/enterEmail"
+                android:textColorHint="@color/colorPrimary"
+                android:textAlignment="center"
+                android:inputType="textEmailAddress"
+                android:id="@+id/user_email_id"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@color/button_color"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/addPerson"
+                android:id="@+id/addPerson"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="All Users"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="26dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/user_list_recycle_view">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
